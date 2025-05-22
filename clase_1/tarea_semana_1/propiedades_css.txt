@@ -1,0 +1,44 @@
+🧷 Tabla: Propiedades CSS Comunes
+
+| Categoría             | Propiedad / Valor                        | Descripción                                               |
+|-----------------------|------------------------------------------|-----------------------------------------------------------|
+| **Diseño y Caja**     | display: flex;                           | Usa Flexbox para organizar hijos.                         |
+|                       | position: absolute;                      | Posiciona el elemento respecto al contenedor.             |
+|                       | top: 20px;                               | Se mueve 20px desde la parte superior.                    |
+|                       | left: 10px;                              | Se mueve 10px desde la izquierda.                         |
+|                       | z-index: 5;                              | Apila el elemento sobre otros con menor índice.           |
+|                       | float: right;                            | Flota a la derecha.                                       |
+|                       | clear: both;                             | Evita flotar junto a otros elementos.                     |
+|                       | overflow: hidden;                        | Oculta lo que se desborda.                                |
+|                       | box-sizing: border-box;                  | Incluye borde y padding en el tamaño total.               |
+| **Tamaño y Espaciado**| width: 300px;                            | Ancho fijo de 300 píxeles.                                |
+|                       | height: 200px;                           | Altura fija de 200 píxeles.                               |
+|                       | min-width: 150px;                        | Ancho mínimo permitido.                                   |
+|                       | max-height: 400px;                       | Altura máxima permitida.                                  |
+|                       | margin: 20px;                            | Espacio externo por todos los lados.                      |
+|                       | padding: 15px;                           | Espacio interno por todos los lados.                      |
+| **Estilo Visual**     | background-color: lightblue;             | Color de fondo.                                           |
+|                       | background-image: url('imagen.jpg');     | Imagen como fondo.                                        |
+|                       | background-size: cover;                  | La imagen cubre todo el fondo.                            |
+|                       | background-repeat: no-repeat;            | No se repite la imagen.                                   |
+|                       | border: 2px solid black;                 | Borde sólido de 2 píxeles.                                |
+|                       | border-radius: 10px;                     | Esquinas redondeadas.                                     |
+|                       | box-shadow: 2px 2px 5px gray;            | Sombra exterior.                                          |
+|                       | opacity: 0.5;                            | 50% de transparencia.                                     |
+|                       | visibility: hidden;                      | Oculta el elemento, pero mantiene el espacio.             |
+| **Texto y Fuente**    | color: red;                              | Color del texto.                                          |
+|                       | font-size: 18px;                         | Tamaño de fuente.                                         |
+|                       | font-family: Arial, sans-serif;          | Tipo de letra.                                            |
+|                       | font-weight: bold;                       | Letra en negrita.                                         |
+|                       | line-height: 1.5;                        | Altura entre líneas.                                      |
+|                       | letter-spacing: 2px;                     | Espacio entre letras.                                     |
+|                       | text-align: center;                      | Texto centrado.                                           |
+|                       | text-decoration: underline;              | Subrayado.                                                |
+|                       | text-transform: uppercase;               | Todo en mayúsculas.                                       |
+| **Flexbox y Grid**    | flex-direction: row;                     | Elementos en fila.                                        |
+|                       | justify-content: space-between;          | Espaciado horizontal.                                     |
+|                       | align-items: center;                     | Alineación vertical al centro.                            |
+|                       | gap: 10px;                               | Espacio entre hijos.                                      |
+|                       | display: grid;                           | Activa Grid Layout.                                       |
+|                       | grid-template-columns: repeat(3, 1fr);   | 3 columnas iguales.                                       |
+|                       | grid-gap: 20px;                          | Espacio entre celdas del grid.                            |

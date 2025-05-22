@@ -1,0 +1,18 @@
+🧷 Tabla: Tipos de Selectores en CSS
+
+| Tipo de Selector         | Sintaxis / Ejemplo                | Qué hace                                                        |
+|------------------------- |-----------------------------------|-----------------------------------------------------------------|
+| Universal               | * {}                              | Selecciona todos los elementos HTML.                            |
+| Etiqueta (tipo)         | p {}                              | Selecciona todos los <p> del documento.                         |
+| Clase                   | .clase {}                         | Selecciona todos los elementos con class="clase".               |
+| ID                      | #id {}                            | Selecciona el elemento con id="id".                             |
+| Descendiente            | div p {}                          | Selecciona <p> que están dentro de un <div>.                    |
+| Hijo directo            | ul > li {}                        | Selecciona <li> que son hijos directos de <ul>.                 |
+| Hermano adyacente       | h1 + p {}                         | Selecciona el <p> que viene inmediatamente después de un <h1>.  |
+| Hermano general         | h1 ~ p {}                         | Selecciona todos los <p> que son hermanos posteriores de <h1>.  |
+| Atributo                | input[type="text"] {}             | Selecciona <input> con atributo type="text".                    |
+| Pseudoclase             | a:hover {}                        | Selecciona <a> cuando el cursor pasa por encima.                |
+| Pseudoclase estructural | li:first-child {}                 | Selecciona el primer hijo <li> dentro de su padre.              |
+| Pseudoelemento          | p::first-line {}                  | Estiliza la primera línea de cada <p>.                          |
+| Pseudoelemento          | p::before { content: "👉"; }      | Inserta contenido antes de cada <p>.                            |
+| Grupo de selectores     | h1, h2, p {}                      | Aplica estilos a múltiples selectores al mismo tiempo.          |
