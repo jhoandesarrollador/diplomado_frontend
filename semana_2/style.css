@@ -4,13 +4,17 @@ body {
   background: #f4f4f4;
 }
 .navbar {
-  background: #2563eb;
+  background: linear-gradient(90deg, #2563eb 0%, #1976d2 100%);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
   height: 60px;
+  transition: background 0.8s;
+}
+.navbar:hover {
+  background: linear-gradient(90deg, #1976d2 0%, #2563eb 100%);
 }
 .navbar .logo {
   font-size: 1.3rem;
