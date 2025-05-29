@@ -145,10 +145,13 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: 8px;
-  transition: background 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
 }
 .buy-btn:hover {
   background: #1741a6;
+  box-shadow: 0 6px 18px rgba(37,99,235,0.18);
+  transform: translateY(-3px) scale(1.05);
 }
 .why-us {
   background: linear-gradient(180deg, #64b5f6 0%, #1976d2 100%);
