@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moquemon</title>
+</head>
+<body>
+    <header>
+        <h1>moquemon! 🐒</h1>
+    </header>
+    
+    <section id="seleccionMascota">
+        <h2>elige tu mascota</h2>
+        <div class="mascotas">
+            <input type="radio" name="mascota" id="mascota1">
+            <label for="mascota1">mascota 1</label>
+        </div>
+        <div>
+            <input type="radio" name="mascota" id="mascota2">
+            <label for="mascota2">mascota 2</label>
+        </div>
+        <div>
+            <input type="radio" name="mascota" id="mascota3">
+            <label for="mascota3">mascota 3</label>
+        </div>
+        <div>
+            <input type="radio" name="mascota" id="mascota4">
+            <label for="mascota4">mascota 4</label>
+        </div>
+        <br>
+        <button id="button">seleccionar mascota</button>
+    </section>
+
+    <section id="selecionarAtaque" style="display:none;">
+        <h2>elige tu ataque</h2>
+        <button id="ataque-fuego">Fuego</button>
+        <button id="ataque-agua">Agua</button>
+        <button id="ataque-tierra">Tierra</button>
+        <p>tu mascota <strong>
+            <span id="mascotaSeleccionada"> xxx </span> 
+        </strong></p>
+        tu mascota tiene <strong>
+            <span id="vidaMascota"> 100 </span>
+        </strong> de vida y la mascota enemiga tiene <strong>
+            <span id="vidaMascotaEnemiga"> 100 </span>
+        </strong> de vida
+        <p>
+            la mascota de tu enemigo es <strong>
+                <span id="mascotaEnemiga"> xxx </span>
+            </strong>
+        </p>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
