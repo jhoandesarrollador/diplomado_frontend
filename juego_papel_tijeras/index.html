@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel y Tijeras</title>
+    <link rel="stylesheet" href="stilo.css">    
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Piedra, Papel y Tijeras 🎮</h1>
+        
+        <div class="botones">
+            <h3>Elige tu opción:</h3>
+            <button class="boton-opcion" onclick="jugar('piedra')">🪨 Piedra</button>
+            <button class="boton-opcion" onclick="jugar('papel')">📄 Papel</button>
+            <button class="boton-opcion" onclick="jugar('tijeras')">✂️ Tijeras</button>
+        </div>
+        
+        <div class="resultados" id="resultados" style="display: none;">
+            <div class="eleccion" id="eleccion-jugador"></div>
+            <div class="eleccion" id="eleccion-computadora"></div>
+            <div class="mensaje-resultado" id="mensaje"></div>
+        </div>
+        
+        <div class="puntajes">
+            <p><strong>Puntuación:</strong></p>
+            <p>Jugador: <span id="puntaje-jugador">0</span> | Computadora: <span id="puntaje-computadora">0</span></p>
+        </div>
+        
+        <button class="reiniciar" onclick="reiniciarJuego()">🔄 Reiniciar Puntuación</button>
+    </div>
+    
+    <script src="tijeras.js"></script>
+</body>
+</html>

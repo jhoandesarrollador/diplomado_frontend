@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.botones {
+    margin: 30px 0;
+}
+
+.boton-opcion {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-opcion:hover {
+    background-color: #45a049;
+}
+
+.resultados {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.eleccion {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.mensaje-resultado {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.ganador {
+    color: #4CAF50;
+}
+
+.perdedor {
+    color: #f44336;
+}
+
+.empate {
+    color: #ff9800;
+}
+
+.puntajes {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.reiniciar {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reiniciar:hover {
+    background-color: #1976D2;
+}
