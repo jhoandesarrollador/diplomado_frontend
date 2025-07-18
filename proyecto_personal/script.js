@@ -1,3 +1,36 @@
+// Configuración del estado global
+const APP_STATE = {
+    isAuthenticated: false,
+    currentUser: null,
+    currentBalance: 0,
+    activeGames: [],
+    notifications: []
+};
+
+// Módulo de utilidades
+const Utils = {
+    formatCurrency: (amount) => new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' }).format(amount),
+    debounce: (func, wait) => {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    },
+    showToast: (message, type = 'info') => {
+        // Implementación del sistema de notificaciones
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    }
+};
+
 // Módulo principal del casino
 const CasinoApp = {
     // Configuración inicial
@@ -5,8 +38,10 @@ const CasinoApp = {
         console.log('🎰 Iniciando CasinoDeluxe...');
         this.setupEventListeners();
         this.setupAnimations();
+        this.setupLocalStorage();
         this.showWelcomeMessage();
         this.loadPlayerData();
+        this.setupServiceWorker();
     },
 
     // Configurar todos los event listeners
